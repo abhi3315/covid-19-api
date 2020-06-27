@@ -25,6 +25,9 @@ const casesTimeSeries = (callBack) => {
 }
 
 const globalData = (orderBy, callBack) => {
+    if (!orderBy || orderBy == ! 'total_cases' || orderBy == ! 'country_name')
+        return callBack(undefined, { error: 'Provide a valid query', status: 400 })
+
     request({ url: `${worldUrl}/summary`, json: true }, (error, { body } = {}) => {
         if (error) callBack({ error: 'Unable to connect to api', status: 500 }, undefined)
         else {
