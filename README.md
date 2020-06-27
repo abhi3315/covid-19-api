@@ -1,5 +1,5 @@
 ## API:
-[https://abhi3315-covid-api.herokuapp.com/]
+https://abhi3315-covid-api.herokuapp.com/
 
 ## Getting started:
 ```
