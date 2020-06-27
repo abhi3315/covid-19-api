@@ -17,7 +17,7 @@ npm run start
 > BASE_URL/global?order_by=country_name
 
 #### Get global data (ordered by: total cases)
-> BASE_URL/global?ordered_by=total_cases
+> BASE_URL/global?order_by=total_cases
 
 #### Get the Indian state data
 > BASE_URL/india
