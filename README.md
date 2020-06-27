@@ -10,7 +10,8 @@ npm run start
 
 ## Getting JSON data
 > request method: GET
-> response date: JSON
+
+> response data: JSON
 
 #### Get global data (ordered by: countries name)
 > BASE_URL/global?order_by=country_name
