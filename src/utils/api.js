@@ -32,7 +32,7 @@ const globalData = (orderBy, callBack) => {
         if (error) callBack({ error: 'Unable to connect to api', status: 500 }, undefined)
         else {
             body.Global.flag = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/International_Flag_of_Planet_Earth.svg/800px-International_Flag_of_Planet_Earth.svg.png'
-            body.Countries.forEach(country => country.flag = `https://www.worldometers.info/img/flags/${country.CountryCode.toLowerCase()}-flag.gif`)
+            body.Countries.forEach(country => country.flag = `https://www.countryflags.io/${country.CountryCode.toLowerCase()}/shiny/64.png`)
             if (orderBy === 'total_cases') {
                 body.Countries.sort((a, b) => (a.TotalConfirmed < b.TotalConfirmed) ? 1 : ((b.TotalConfirmed < a.TotalConfirmed) ? -1 : 0))
                 callBack(undefined, body)
