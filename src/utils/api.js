@@ -1,7 +1,7 @@
 const request = require('request')
 
 const indiaUrl = "https://api.covid19india.org"
-const worldUrl = "https://api.covid19api.com/"
+const worldUrl = "https://api.covid19api.com"
 
 const stateWiseData = (callBack) => {
     request({ url: `${indiaUrl}/data.json`, json: true }, (error, { body } = {}) => {
